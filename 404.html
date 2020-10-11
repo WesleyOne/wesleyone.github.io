@@ -8,9 +8,9 @@
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="cover.css" rel="stylesheet">
-    <title>Blank is colorful</title>
+    <link href="assert/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="assert/css/cover.css" rel="stylesheet">
+    <title>WesleyOne</title>
 
     <style>
       .bd-placeholder-img {
@@ -38,7 +38,9 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
         <div class="inner">
-            <h3 class="masthead-brand">WesleyOne@404</h3>
+            <h3 class="masthead-brand min-width-need-hidden" hidden="hidden">
+                <img src="assert/images/qrcode.png" style="width: auto;height: 72px" alt="WesleyOne公众号" loading="lazy">
+            </h3>
             <nav class="nav nav-masthead justify-content-center">
                 <a class="nav-link active" href="/">返回Home</a>
             </nav>
@@ -52,6 +54,9 @@
     <footer class="mastfoot mt-auto">
         <div class="inner">
             <p>Photograph by <a href="https://github.com/WesleyOne">@WesleyOne</a>.</p>
+            <p>
+                <img src="assert/images/qrcode.png" style="width: auto;height: 72px">
+            </p>
         </div>
     </footer>
 </div>

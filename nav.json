@@ -1,0 +1,115 @@
+[
+  {
+    "navName": "🌍常用组件/框架",
+    "data": [
+      {
+        "name": "️☎️Dubbo",
+        "desc": "分布式RPC框架",
+        "github": "https://github.com/apache/dubbo",
+        "docs": "http://dubbo.apache.org/zh-cn/docs/user/quick-start.html",
+        "notes": "https://wesleyone.github.io/dubboCake/"
+      },
+      {
+        "name": "🚀RocketMQ",
+        "desc": "分布式消息中间件",
+        "github": "https://github.com/apache/rocketmq",
+        "docs": "https://rocketmq.apache.org/docs/quick-start/",
+        "notes": "https://wesleyone.github.io/rocketmqCake/"
+      },
+      {
+        "name": "⏰Elasticjob",
+        "desc": "分布式任务调度",
+        "github": "https://github.com/apache/shardingsphere-elasticjob",
+        "docs": "https://shardingsphere.apache.org/elasticjob/current/cn/overview/",
+        "notes": ""
+      },
+      {
+        "name": "⏳Sentinel",
+        "desc": "分布式流量控制",
+        "github": "https://github.com/alibaba/Sentinel",
+        "docs": "https://sentinelguard.io/zh-cn/docs/introduction.html",
+        "notes": ""
+      },
+      {
+        "name": "📚Nacos",
+        "desc": "服务发现和配置管理",
+        "github": "https://github.com/alibaba/nacos",
+        "docs": "https://nacos.io/zh-cn/docs/quick-start.html",
+        "notes": ""
+      },
+      {
+        "name": "\uD83C\uDF40ShardingSphere",
+        "desc": "分布式数据库中间件",
+        "github": "https://github.com/apache/shardingsphere",
+        "docs": "http://shardingsphere.apache.org/index_zh.html",
+        "notes": ""
+      },
+      {
+        "name": "\uD83D\uDD04Seata",
+        "desc": "分布式事务解决方案",
+        "github": "https://github.com/seata/seata",
+        "docs": "https://seata.io/zh-cn/docs/overview/what-is-seata.html",
+        "notes": ""
+      },
+      {
+        "name": "\uD83D\uDEB0canal",
+        "desc": "MySQL binlog 增量订阅&消费组件",
+        "github": "https://github.com/alibaba/canal",
+        "docs": "https://github.com/alibaba/canal/wiki",
+        "notes": ""
+      },
+      {
+        "name": "\uD83D\uDC3F️Flink",
+        "desc": "分布式处理引擎",
+        "github": "https://github.com/apache/flink",
+        "docs": "https://flink.apache.org/zh/",
+        "notes": ""
+      },
+      {
+        "name": "\uD83D\uDC26Apollo",
+        "desc": "分布式配置中心",
+        "github": "https://github.com/ctripcorp/apollo",
+        "docs": "https://github.com/ctripcorp/apollo/wiki",
+        "notes": ""
+      },
+      {
+        "name": "\uD83D\uDC26️mybatis-3",
+        "desc": "SQL映射框架",
+        "github": "https://github.com/mybatis/mybatis-3",
+        "docs": "https://mybatis.org/mybatis-3/zh/index.html",
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "navName": "🍂Spring",
+    "data": [
+      {
+        "name": "🍂Spring Cloud Alibaba",
+        "desc": "微服务开发的一站式解决方案",
+        "github": "https://github.com/alibaba/spring-cloud-alibaba",
+        "docs": "https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/zh-cn/index.html#_%E4%BB%8B%E7%BB%8D",
+        "notes": ""
+      },
+      {
+        "name": "🍂SpringBoot",
+        "desc": "Spring极速开发框架",
+        "github": "https://github.com/spring-projects/spring-boot",
+        "docs": "https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-documentation",
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "navName": "\uD83D\uDEF8日常",
+    "data": [
+      {
+        "name": "😂",
+        "desc": "",
+        "github": "",
+        "docs": "",
+        "notes": ""
+      }
+    ]
+  }
+]

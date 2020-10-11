@@ -8,9 +8,8 @@
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
     <meta name ="keywords" content="it, wesleyone, dubbo, rocketmq, elasticjob, Sentinel, Nacos, Seata, ShardingSphere, Canel, Flink">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="cover.css" rel="stylesheet">
+    <link href="assert/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="assert/css/cover.css" rel="stylesheet">
     <title>WesleyOne</title>
 
     <style>
@@ -26,49 +25,81 @@
       @media (min-width: 768px) {
         body {
           background-repeat: round;
-          background-image:url("bg.jpg");
+          background-image:url("assert/images/bg.jpg");
         }
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
+        .min-width-need-hidden {
+           display: inline!important
+        }
       }
     </style>
+    <script src="assert/js/jquery.min.js"></script>
+    <script src="assert/js/popper.min.js"></script>
+    <script src="assert/js/bootstrap.min.js"></script>
+    <script type = "text/javascript" >
+        $(function (){
+            loadNav();
+        });
+        function loadNav() {
+            $.getJSON("nav.json", function (data){
+                var strHtml = "";
+                $.each(data, function (infoIndex, info){
+                    strHtml += makeDropdown(info["navName"],info["data"]);
+                })
+                var $projectsNav = $("#projectsNav");
+                $projectsNav.empty();
+                $projectsNav.html(strHtml);
+            })
+        }
+        function makeDropdown(dropdownName, datas) {
+             var  makeDropdownStr = "<li class=\"nav-item dropdown\">" +
+                        "<a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"true\">"+ dropdownName +"</a>" +
+                        "<div class=\"dropdown-menu dropdown-menu-right\">";
+             $.each(datas, function (infoIndex, info){
+                    makeDropdownStr += makeDropdownItem(info["name"],info["desc"],info["github"],info["docs"],info["notes"]);
+             });
+             makeDropdownStr += "</div></li>";
+             return makeDropdownStr;
+        }
+        function makeDropdownItem(title,text,githubUrl,docsUrl,notesUrl) {
+            <!--  链接优先级：notes > docs > github -->
+            var url = "#";
+            if(notesUrl != undefined && notesUrl != "") {
+                url = notesUrl;
+            }
+            else if (docsUrl != undefined && docsUrl != "") {
+                url = docsUrl;
+            }
+            else if (githubUrl != undefined && githubUrl != "") {
+                url = githubUrl;
+            }
+            return "<a class=\"dropdown-item\" href=\"" + url + "\">" + title +"："+ text + "️</a>";
+        }
+    </script>
 </head>
 <body class="text-center">
 
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
-        <div class="inner">
-            <h3 class="masthead-brand">
-            	WesleyOne
+        <div class="inner" >
+            <h3 class="masthead-brand min-width-need-hidden" hidden="hidden">
+                <img src="assert/images/qrcode.png" style="width: auto;height: 72px" alt="WesleyOne公众号" loading="lazy">
             </h3>
-            <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="dubboCake">Dubbo☎️</a>
-                <a class="nav-link" href="rocketmqCake">RocketMQ🚀</a>
-                <a class="nav-link" href="#">未完待续</a>
-                <!-- 
-                <a class="nav-link" href="/springCake">Spring</a>
-                <a class="nav-link" href="/elasticjobCake">Elasticjob</a>
-                <a class="nav-link" href="/sentinelCake">Sentinel</a>
-                <a class="nav-link" href="/nacosCake">Nacos</a>
-                <a class="nav-link" href="/shardingsphereCake">ShardingSphere</a>
-                <a class="nav-link" href="/seataCake">Seata</a>
-                <a class="nav-link" href="/canelCake">Canel</a>
-                <a class="nav-link" href="/flinkCake">Flink</a>
-                 -->
-            </nav>
+            <ul class="nav nav-pills justify-content-end" id="projectsNav">
+            </ul>
         </div>
     </header>
 
-    <main role="main" class="inner cover">
+    <main role="main" class="inner cover min-width-need-hidden" hidden="hidden">
         <h1 class="cover-heading">风景依旧</h1>
+        <p>Photograph by <a href="https://github.com/WesleyOne">@WesleyOne</a>.</p>
     </main>
 
     <footer class="mastfoot mt-auto">
         <div class="inner">
-            <p>Photograph by <a href="https://github.com/WesleyOne">@WesleyOne</a>.</p>
-            <p><img src="qrcode.png" style="width: auto;height: 72px"></p>
+
         </div>
     </footer>
 </div>
