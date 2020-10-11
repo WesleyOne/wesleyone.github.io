@@ -22,24 +22,24 @@
         -ms-user-select: none;
         user-select: none;
       }
+      body {
+        background-size: 100% 100%;
+        background-image:url("assert/images/bg3.jpg");
+      }
 
       @media (min-width: 768px) {
         body {
           background-size: 100% 100%;
-          background-image:url("assert/images/bg2.jpg");
+          background-image:url("assert/images/bg.jpg");
         }
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
-        .min-width-need-hidden {
-           display: inline!important
-        }
-
       }
     </style>
 <!--    <script src="assert/js/jquery.min.js"></script>-->
 <!--    <script src="assert/js/popper.min.js"></script>-->
-    <!--    <script src="assert/js/bootstrap.min.js"></script>-->
+<!--    <script src="assert/js/bootstrap.min.js"></script>-->
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -63,16 +63,29 @@
                         "<a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"true\">"+ dropdownName +"</a>" +
                         "<div class=\"dropdown-menu dropdown-menu-right\">";
              $.each(datas, function (infoIndex, info){
-                    makeDropdownStr += makeDropdownItem(info["name"],info["desc"],info["github"],info["docs"],info["notes"]);
+                    makeDropdownStr += makeDropdownItem(info);
              });
              makeDropdownStr += "</div></li>";
              return makeDropdownStr;
         }
-        function makeDropdownItem(title,text,githubUrl,docsUrl,notesUrl) {
+        function makeDropdownItem(info) {
+            var title = info["name"];
+            var text = info["desc"];
+            var githubUrl = info["github"];
+            var docsUrl = info["docs"];
+            var notesUrl = info["notes"];
+            var star = info["star"];
+            <!--  分隔符 -->
+            if(title == "dropdown-divider") {
+                return "<div class=\"dropdown-divider\"></div>";
+            }
+
             <!--  链接优先级：notes > docs > github -->
             var url = "#";
+            var tag = "";
             if(notesUrl != undefined && notesUrl != "") {
                 url = notesUrl;
+                tag = "🍰 ";
             }
             else if (docsUrl != undefined && docsUrl != "") {
                 url = docsUrl;
@@ -80,7 +93,11 @@
             else if (githubUrl != undefined && githubUrl != "") {
                 url = githubUrl;
             }
-            return "<a class=\"dropdown-item\" href=\"" + url + "\">" + title +"："+ text + "️</a>";
+            <!--   star展示 -->
+            if(star != undefined && star != "") {
+                text += "<img src=\"" + star + "\">";
+            }
+            return "<a class=\"dropdown-item\" href=\"" + url + "\">" + tag + title +"："+ text + "</a>";
         }
     </script>
 </head>
@@ -89,21 +106,18 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
         <div class="inner" >
-            <h3 class="masthead-brand" >
-                <img src="assert/images/qrcode.png" style="width: auto;height: 72px" alt="WesleyOne公众号" loading="lazy">
-            </h3>
-            <ul class="nav nav-pills justify-content-end" id="projectsNav">
+            <ul class="nav justify-content-end" id="projectsNav">
             </ul>
         </div>
     </header>
 
-    <main role="main" class="inner cover min-width-need-hidden" hidden="hidden">
-        <h1 class="cover-heading">风景依旧</h1>
-        <p>Photograph by <a href="https://github.com/WesleyOne">@WesleyOne</a>.</p>
+    <main role="main" class="inner cover">
     </main>
 
     <footer class="mastfoot mt-auto">
         <div class="inner">
+            <p>灯塔与海船 摄于东极岛</p>
+            <p><img src="assert/images/qrcode.png" style="width: auto;height: 72px" alt="WesleyOne公众号" loading="lazy"><p>
         </div>
     </footer>
 </div>

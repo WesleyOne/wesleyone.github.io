@@ -1,7 +1,25 @@
 [
   {
-    "navName": "🌍常用组件/框架",
+    "navName": "🌍开源项目",
     "data": [
+      {
+        "name": "🍂Spring Cloud Alibaba",
+        "desc": "微服务一站式解决方案",
+        "github": "https://github.com/alibaba/spring-cloud-alibaba",
+        "docs": "https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/zh-cn/index.html#_%E4%BB%8B%E7%BB%8D",
+        "notes": ""
+      },
+      {
+        "name": "🍂SpringBoot",
+        "desc": "Spring极速开发框架",
+        "github": "https://github.com/spring-projects/spring-boot",
+        "docs": "https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-documentation",
+        "notes": ""
+      },
+      {
+        "name": "dropdown-divider",
+        "desc": ""
+      },
       {
         "name": "️☎️Dubbo",
         "desc": "分布式RPC框架",
@@ -17,13 +35,6 @@
         "notes": "https://wesleyone.github.io/rocketmqCake/"
       },
       {
-        "name": "⏰Elasticjob",
-        "desc": "分布式任务调度",
-        "github": "https://github.com/apache/shardingsphere-elasticjob",
-        "docs": "https://shardingsphere.apache.org/elasticjob/current/cn/overview/",
-        "notes": ""
-      },
-      {
         "name": "⏳Sentinel",
         "desc": "分布式流量控制",
         "github": "https://github.com/alibaba/Sentinel",
@@ -35,13 +46,6 @@
         "desc": "服务发现和配置管理",
         "github": "https://github.com/alibaba/nacos",
         "docs": "https://nacos.io/zh-cn/docs/quick-start.html",
-        "notes": ""
-      },
-      {
-        "name": "\uD83C\uDF40ShardingSphere",
-        "desc": "分布式数据库中间件",
-        "github": "https://github.com/apache/shardingsphere",
-        "docs": "http://shardingsphere.apache.org/index_zh.html",
         "notes": ""
       },
       {
@@ -66,7 +70,21 @@
         "notes": ""
       },
       {
-        "name": "\uD83D\uDC26Apollo",
+        "name": "⏰Elasticjob",
+        "desc": "分布式任务调度",
+        "github": "https://github.com/apache/shardingsphere-elasticjob",
+        "docs": "https://shardingsphere.apache.org/elasticjob/current/cn/overview/",
+        "notes": ""
+      },
+      {
+        "name": "\uD83C\uDF40ShardingSphere",
+        "desc": "分布式数据库中间件",
+        "github": "https://github.com/apache/shardingsphere",
+        "docs": "http://shardingsphere.apache.org/index_zh.html",
+        "notes": ""
+      },
+      {
+        "name": "🍍Apollo",
         "desc": "分布式配置中心",
         "github": "https://github.com/ctripcorp/apollo",
         "docs": "https://github.com/ctripcorp/apollo/wiki",
@@ -102,31 +120,47 @@
     ]
   },
   {
-    "navName": "🍂Spring",
+    "navName": "\uD83D\uDE02自嗨",
     "data": [
       {
-        "name": "🍂Spring Cloud Alibaba",
-        "desc": "微服务一站式解决方案",
-        "github": "https://github.com/alibaba/spring-cloud-alibaba",
-        "docs": "https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/zh-cn/index.html#_%E4%BB%8B%E7%BB%8D",
+        "name": "📷随拍",
+        "desc": "占个位置抽空整理",
         "notes": ""
       },
       {
-        "name": "🍂SpringBoot",
-        "desc": "Spring极速开发框架",
-        "github": "https://github.com/spring-projects/spring-boot",
-        "docs": "https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-documentation",
-        "notes": ""
-      }
-    ]
-  },
-  {
-    "navName": "\uD83D\uDEF8日常",
-    "data": [
+        "name": "dropdown-divider",
+        "desc": ""
+      },
       {
-        "name": "😂",
-        "desc": "",
-        "github": "",
+        "name": "📒随笔",
+        "desc": "占个位置抽空整理",
+        "notes": ""
+      },
+      {
+        "name": "dropdown-divider",
+        "desc": ""
+      },
+      {
+        "name": "\uD83D\uDC65shixun",
+        "desc": "web视频会议",
+        "github": "https://gitee.com/OpenVidu_CN/shixun-server",
+        "star": "https://gitee.com/OpenVidu_CN/shixun-server/badge/star.svg?theme=dark",
+        "docs": "",
+        "notes": ""
+      },
+      {
+        "name": "🤖️wxwobot",
+        "desc": "vx机器人",
+        "github": "https://gitee.com/wesleyOne/wxwobot",
+        "star": "https://gitee.com/wesleyOne/wxwobot/badge/star.svg?theme=dark",
+        "docs": "",
+        "notes": ""
+      },
+      {
+        "name": "🔌WifiUSB",
+        "desc": "局域网下扫码传输文件",
+        "github": "https://gitee.com/wesleyOne/WifiUSB",
+        "star": "",
         "docs": "",
         "notes": ""
       }
