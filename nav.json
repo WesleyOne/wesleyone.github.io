@@ -78,6 +78,26 @@
         "github": "https://github.com/mybatis/mybatis-3",
         "docs": "https://mybatis.org/mybatis-3/zh/index.html",
         "notes": ""
+      },
+      {
+        "name": "☁️️skywalking",
+        "desc": "分布式系统APM",
+        "github": "https://github.com/apache/skywalking",
+        "docs": "https://github.com/apache/skywalking/tree/v8.1.0/docs",
+        "notes": ""
+      },{
+        "name": "⭕️pinpoint",
+        "desc": "分布式系统APM",
+        "github": "https://github.com/naver/pinpoint",
+        "docs": "https://naver.github.io/pinpoint/",
+        "notes": ""
+      },
+      {
+        "name": "🦋Netty",
+        "desc": "事件驱动的异步通讯框架",
+        "github": "https://github.com/netty/netty",
+        "docs": "https://netty.io/wiki/index.html",
+        "notes": ""
       }
     ]
   },
@@ -86,7 +106,7 @@
     "data": [
       {
         "name": "🍂Spring Cloud Alibaba",
-        "desc": "微服务开发的一站式解决方案",
+        "desc": "微服务一站式解决方案",
         "github": "https://github.com/alibaba/spring-cloud-alibaba",
         "docs": "https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/zh-cn/index.html#_%E4%BB%8B%E7%BB%8D",
         "notes": ""
