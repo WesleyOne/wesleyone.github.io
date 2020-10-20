@@ -123,6 +123,20 @@
         "github": "https://github.com/alibaba/arthas",
         "docs": "https://arthas.aliyun.com/doc/",
         "notes": ""
+      },
+      {
+        "name": "🧮SOFAJRaft",
+        "desc": "纯Java的Raft算法实现库",
+        "github": "https://github.com/sofastack/sofa-jraft",
+        "docs": "https://www.sofastack.tech/projects/sofa-jraft/overview/",
+        "notes": ""
+      },
+      {
+        "name": "🐜sofastack",
+        "desc": "蚂蚁金服金融级云原生架构",
+        "github": "https://github.com/sofastack",
+        "docs": "https://www.sofastack.tech/",
+        "notes": ""
       }
     ]
   },
@@ -131,7 +145,7 @@
     "data": [
       {
         "name": "📷随拍",
-        "desc": "有啥免费的照片共享平台",
+        "desc": "哦，这样啊",
         "notes": ""
       },
       {
