@@ -1,6 +1,6 @@
 [
   {
-    "navName": "🌍开源项目",
+    "navName": "🌍学习向导",
     "data": [
       {
         "name": "🍂Spring Cloud Alibaba",
@@ -141,20 +141,11 @@
     ]
   },
   {
-    "navName": "\uD83D\uDE02自嗨",
+    "navName": "🤹‍♀️个人杂耍",
     "data": [
       {
-        "name": "📷随拍",
-        "desc": "哦，这样啊",
-        "notes": ""
-      },
-      {
-        "name": "dropdown-divider",
-        "desc": ""
-      },
-      {
         "name": "📒随笔",
-        "desc": "呵，男人",
+        "desc": "",
         "notes": "https://wesleyone.github.io/blog/"
       },
       {
