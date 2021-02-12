@@ -35,6 +35,8 @@ layout: default
 ##### ☁️ SkyWalking - APM [官网](http://skywalking.apache.org/)
 ------
 #### 工具
+##### 🥁 Guava - Google核心工具类库 [Github](https://github.com/google/guava)
+##### 🐯 Hutool - 小而全的工具类库 [Github](https://github.com/looly/hutool)
 ##### 🔭 Arthas - Java诊断工具 [Github](https://github.com/alibaba/arthas)
 ##### 🦦 TransmittableThreadLocal - 会池化复用线程值传递 [Github](https://github.com/alibaba/transmittable-thread-local)
 ##### 🪢 QLExpress - 动态脚本引擎解析工具 [Github](https://github.com/alibaba/QLExpress)
