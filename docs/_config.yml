@@ -20,7 +20,7 @@
 
 title: 火字旁的炜@WesleyOne
 email: wesleyone666@163.com
-weixinmqimg: https://raw.githubusercontent.com/WesleyOne/wesleyone.github.io/master/assert/images/qrcode.png
+weixinmqimg: https://raw.githubusercontent.com/WesleyOne/wesleyone.github.io/master/docs/assert/images/qrcode.png
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
