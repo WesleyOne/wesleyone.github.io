@@ -3,7 +3,7 @@ title: 开源收集
 layout: default
 ---
 
-#### 服务发现、配置、调度、限流、事务中间件
+#### 分布式组件
 ##### 🍍 Apollo - 动态配置 [Github](https://github.com/ctripcorp/apollo)
 ##### ⏰ Elasticjob - 分布式任务调度 [官网](http://shardingsphere.apache.org/elasticjob/index_zh.html)
 ##### 📚 Nacos - 服务发现和动态配置 [官网](https://nacos.io/zh-cn/index.html)
@@ -20,7 +20,7 @@ layout: default
 #### 数据存储
 ##### 🐬 Mysql - [手册8.0](https://dev.mysql.com/doc/refman/8.0/en/)|[手册5.7](https://dev.mysql.com/doc/refman/5.7/en/)
 ##### ♦️ Redis [官网](https://redis.io/)
-##### 🌻 Elasticsearch - 分布式搜索分析引擎 [手册](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
+##### 🌻 Elasticsearch - 分布式搜索分析引擎 [手册](https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html)
 ##### 🐦 MyBatis - 持久层框架 [官网](https://mybatis.org/mybatis-3/zh/index.html)
 ##### ☕️ caffeine - 内存缓存库 [Github](https://github.com/ben-manes/caffeine)
 ##### innodb-java-reader - java直接访问innodb存储引擎 [Github](https://github.com/alibaba/innodb-java-reader)
@@ -53,3 +53,8 @@ layout: default
 ------
 #### 云原生
 ##### 🕸️ K8S [官网](https://kubernetes.io/zh/docs/home/)｜[技术公开课](https://developer.aliyun.com/course/1651?userCode=dnuqwh0e&utm_source=dnuqwh0e)
+------
+#### 视频通讯
+##### 💻 WebRTC [Github](https://github.com/webrtc)｜ [API文档](https://developer.mozilla.org/zh-CN/docs/Web/API/WebRTC_API) ｜[在线示例](https://webrtc.github.io/samples/)
+##### 💻 OpenVidu [Github](https://github.com/OpenVidu)
+##### 💻 Jitsi [Github](https://github.com/jitsi)
